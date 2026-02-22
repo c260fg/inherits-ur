@@ -137,8 +137,8 @@ _tarname="${_pkg}-${_tag}"
 _npm_tarname="${_pkg}-${_tag}"
 _tarfile="${_tarname}.${_archive_format}"
 _npm_tarfile="${_npm_tarname}.${_archive_format}"
-_sum="SKIP"
-_sig_sum="SKIP"
+_sum="fc02da8e097a6ac82263a68a5fa441a9b8d0cc8d7e34551341460fea7b4f0619"
+_sig_sum="d1acb8207f47fefffd54765644ecaca08b760f58df5af0fcfcd052bded88d6a1"
 _bundle_sum="SKIP"
 _bundle_sig_sum="SKIP"
 _npm_sum="d94dbc6c1bb3c5ac0fb12a73ade187108fc60de273a1b754f55044eb5e24afaf"
@@ -177,7 +177,6 @@ sha256sums=()
 if [[ "${_evmfs}" == "true" ]]; then
   if [[ "${_npm}" == "true" ]]; then
     _uri="${_evmfs_npm_uri}"
-    _sum="${_npm_sum}"
     _sig_src="${_npm_sig_src}"
     _sig_sum="${_npm_sig_sum}"
   elif [[ "${_npm}" == "false" ]]; then
